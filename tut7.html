@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID's and classes in HTML</title>
+    <style>
+        #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Using The id Attribute
+The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.
+
+The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+
+The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.
+
+In the following example we have an <h1> element that points to the id name "myHeader". This <h1> element will be styled according to the #myHeader style definition in the head section: -->
+
+    <!-- Note: The id name is case sensitive!
+
+Note: The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).
+
+ -->
+    <H3>IDs and classes</H3>
+    <h2>The id Attribute</h2>
+    <p>Use CSS to style an element with the id "myHeader":</p>
+
+    <h1 id="myHeader">My Header</h1>
+
+    <!-- Difference Between Class and ID
+A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element -->
+    <!-- Emmet -->
+    <!-- . is for class and # is for id -->
+    <span class="redBG"></span>
+    <span id="mainspan"></span>
+    <!-- Emmet takes div tag as default -->
+    <div class="blackBackground"></div>
+    <!-- creating multiple elements using Emmet -->
+    <!-- span.myclass.myclass2.myclass3*4 + <Tab> to print 4 similar elements using Emmet -->
+    <span class="myclass myclass2 myclass3">first</span>
+    <span class="myclass myclass2 myclass3">second</span>
+    <span class="myclass myclass2 myclass3">third</span>
+    <span class="myclass myclass2 myclass3">fourth</span>
+
+</body>
+
+</html>
